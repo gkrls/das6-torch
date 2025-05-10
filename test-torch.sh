@@ -15,6 +15,9 @@ echo "Node List: $SLURM_JOB_NODELIST"
 echo "Number of Nodes: $SLURM_NNODES"
 echo "Tasks: $SLURM_NTASKS"
 
+module load cuda12.6/toolkit
+module load cuDNN/cuda12.6
+
 source $HOME/.bashrc
 conda activate base
 
